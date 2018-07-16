@@ -1,0 +1,13 @@
+<nav>
+    <div class="nav-wrapper blue-grey darken-3">
+        <a href="<?= $this->url($href, $param) ?>" class="brand-logo">
+            <?= $this->image($logo, [], ['padding: 20%', 'height: 100%']) ?>
+        </a>
+        <?= $this
+                ->navigation('navigation')
+                ->menu()
+                ->setUlClass("left hide-on-med-and-down")
+                ->renderMenu(null, ['maxDepth' => 0])
+        ?>
+    </div>
+</nav>

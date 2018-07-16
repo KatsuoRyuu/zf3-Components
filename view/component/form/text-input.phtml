@@ -1,0 +1,19 @@
+<input 
+    accept=""value="<?= $element->getValue() ?>" 
+    id="<?= $element->getName() ?>" 
+    type="text" 
+    class="validate" 
+/>
+<label 
+    class="active" 
+    for="<?= $element->getName() ?>"
+    >
+<?= $element->getLabel() ?>
+</label>
+<span 
+    class="helper-text" 
+    data-error="wrong" 
+    data-success="right"
+    >
+<?= $element->getMessages() ?>
+</span>
